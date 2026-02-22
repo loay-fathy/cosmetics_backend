@@ -42,7 +42,6 @@ class UserProfileView(generics.RetrieveUpdateAPIView):
     def get_object(self):
         return self.request.user
 
-# --- ADD THIS NEW VIEW ---
 class VerifyEmailView(APIView):
     """
     View to activate user account from email link.
